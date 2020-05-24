@@ -36,9 +36,9 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        @*<footer>
             <p>ReactJS Assignment 2</p>
-        </footer>
+        </footer>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
@@ -46,7 +46,12 @@
     <!-- React Library & React DOM-->
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="~/Scripts/assignment2.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="~/Scripts/assignment2.js" type="text/babel"></script>
+    @*<script src="~/Scripts/ContactList.js"></script>
+    <script src="~/Scripts/Contact.js"></script>
+    <script src="~/Scripts/App.js"></script>
+    <script src="~/Scripts/index.js"></script>*@
     @RenderSection("scripts", required: false)
 </body>
 </html>
